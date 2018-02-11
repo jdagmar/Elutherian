@@ -1,0 +1,72 @@
+body {
+    background-color: $backgroundColorOuter;
+}
+
+header {
+    border-bottom: 1px solid $borderColorOuter;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+.header__hamburger {
+    display: none;
+}
+
+.menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin: 10px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: transparent;
+    border: none;
+}
+
+.menu__item {
+    border: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.menu__item--mobile-only {
+    display: none;
+}
+
+main {
+    margin: 0px auto;
+    width: 80%;
+    background-color: $backgroundColorInner;
+    @include borderOutside();
+    border-top: none;
+}
+
+.contact-info {
+    max-width: 400px;
+}
+
+.send-btn {
+    width: 200px;
+
+        &:hover {
+        background-color: $buttonHoverColor;
+    }
+}
+
+footer {
+    margin: 0px auto;
+    width: 80%;
+}
+
+.footer__icon--big:hover {
+    color: $promotionColor;
+}

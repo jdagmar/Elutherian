@@ -1,0 +1,27 @@
+//outer elements (outside main tag)
+$borderColorOuter: #333333;
+$navTextColor: #f5f5f5;
+$backgroundColorOuter: #030303;
+
+//inner elements (inside main tag)
+$textColor:#262626;
+$borderColorInner: #D3D3D3;
+$backgroundColorInner: #fcfcfc;
+$promotionColor: #2424c3;
+$buttonHoverColor: #e6e6e6;
+
+@mixin borderOutside() { 
+    border: 1px solid $borderColorOuter;
+}
+
+@mixin borderInside(){
+    border: 1px solid $borderColorInner;
+}
+
+@mixin carouselNavStyle(){
+    top: 0;
+    height: 100%;
+    width: 60px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+}
